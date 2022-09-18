@@ -1,0 +1,127 @@
+body{
+    background-color: aquamarine;
+}
+
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 20px 20px;
+    max-height: 430px;
+}
+
+.bonus_content{
+    margin-top: 50px;
+}
+
+.bonus_content__inner{
+    border-radius: 14px;
+    background-color: #fff;
+}
+
+.bonus_content__frame_box{
+    padding: 50px 102px;
+    display: flex;
+}
+
+.bonus_content__box{
+    display: flex;
+    align-items: start;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding-left: 95px;
+    padding-right: 50px;
+    text-align: center;
+}
+
+.bonus_content__text {
+    width: 600px;
+    font-size: 45px;
+    font-family: "Roboto";
+    color: rgb(91, 132, 199);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.111;
+    text-align: left;
+}
+
+.lowercase{
+    text-transform: none;
+}
+
+.bonus_content__btn {
+    border-radius: 5px;
+    background-image: -moz-linear-gradient( -4deg, rgb(255,128,21) 0%, rgb(253,86,29) 100%);
+    background-image: -webkit-linear-gradient( -4deg, rgb(255,128,21) 0%, rgb(253,86,29) 100%);
+    background-image: -ms-linear-gradient( -4deg, rgb(255,128,21) 0%, rgb(253,86,29) 100%);
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.25);
+    padding: 20px 75px;
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+}
+
+.bonus_content__greed{
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    padding: 25px 25px;
+    gap: 30px;
+}
+
+.cell{
+    background-color: #dcdedf;
+}
+
+@media (max-width: 1199px){
+
+
+    .bonus_content__box{
+        align-items: center;
+    }
+    .bonus_content__frame_box{
+        flex-direction: column;
+    }
+
+    .bonus_content__img{
+        margin: 0 auto;
+        display: block;
+        width: 279px;
+        height: 251px;
+    }
+
+    .bonus_content__text{
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 745px){
+    .bonus_content__text{
+        font-size: 32px;
+    }
+
+    .bonus_content__box{
+        padding: 0px 0px;
+    }
+
+}
+
+@media (max-width: 550px){
+    .bonus_content__text{
+        width: 300px;
+        font-size: 19px;
+    }
+
+    .bonus_content__frame_box{
+        padding: 0px 0px;
+    }
+
+    .bonus_content__img{
+        margin-top: 25px;
+    }
+
+    .bonus_content__img{
+        width: 200px;
+        height: 180px;
+    }
+}
